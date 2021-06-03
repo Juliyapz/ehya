@@ -30,8 +30,40 @@
       margin-bottom: 20px
 
 @media ( max-width:768px )
-  .header-left
-    display: none
+  .header
+    &--mobile
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      z-index: 99
+      background-color: #fff
+      padding-bottom: 18px
+    &-left
+      display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 70px
+      &--visible
+        display: flex
+        flex-direction: column
+        overflow: auto
+        scrollbar-width: none
+        background-color: #fff
+  .nav
+    &__list
+      flex-direction: column
+      align-items: center
+      margin: 0 0 20px 0
+    &__item
+      &:not(:last-child)
+        padding: 0
+        margin: 0 0 20px 0
+  .main
+    &__title
+      margin-top: 145px
   .menu
     &-button
       display: flex
@@ -51,11 +83,15 @@
         border-radius: 1px
         margin-right: 21px
         padding-bottom: 2px
+  .modal
+    &__dialog
+      top: 30%
 
 @media ( max-width:576px)
   .header
     padding: 18px 0 11px 0
-    &-wrapper
+    &-left
+      top: 57px
 
   .container
     max-width: 89%
@@ -65,6 +101,8 @@
       font-size: 32px
       line-height: 40px
       margin-bottom: 24px
+      padding-top: 57px
+      margin-top: 43px
     &__description
       font-size: 16px
       line-height: 24px
@@ -87,3 +125,6 @@
       font-size: 16px
       padding: 6px 27px
       margin-bottom: 35px
+  .modal
+    &__dialog
+      top: 30%
