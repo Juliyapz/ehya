@@ -1,0 +1,89 @@
+@media (max-width:1200px)
+  .container
+    max-width: 90%
+  .button
+    display: flex
+    flex-wrap: wrap
+    &__buy
+      margin-bottom: 20px
+      flex-basis: 60%
+    &__read
+      flex-basis: 60%
+
+@media ( max-width: 992px )
+  .main
+    &-wrapper
+      text-align: center
+      flex-direction: column
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__text
+      max-width: 70%
+  .button
+    &__buy
+      margin-right: 0
+      flex-basis: 100%
+    &__read
+      flex-basis: 100%
+      margin-bottom: 20px
+
+@media ( max-width:768px )
+  .header-left
+    display: none
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 17px
+      padding: 0
+      justify-content: space-between
+      flex-direction: column
+      align-items: center
+      border: none
+      background-color: transparent
+      cursor: pointer
+      &__line
+        width: 22px
+        height: 2px
+        background-color: #3A4C66
+        border-radius: 1px
+        margin-right: 21px
+        padding-bottom: 2px
+
+@media ( max-width:576px)
+  .header
+    padding: 18px 0 11px 0
+    &-wrapper
+
+  .container
+    max-width: 89%
+  .main
+    &__title
+      font-weight: bold
+      font-size: 32px
+      line-height: 40px
+      margin-bottom: 24px
+    &__description
+      font-size: 16px
+      line-height: 24px
+    &__text
+      font-size: 16px
+      line-height: 23px
+      max-width: 100%
+      margin: 33px 0 16px 0
+    &__image
+      padding: 57px 60px 28px 56px
+    &__img
+      min-width: 172px
+  .button
+    flex-direction: column
+    align-items: center
+    &__buy
+      padding: 9px 20px
+      margin-bottom: 15px
+    &__read
+      font-size: 16px
+      padding: 6px 27px
+      margin-bottom: 35px
