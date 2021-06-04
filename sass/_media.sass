@@ -5,10 +5,26 @@
     display: flex
     flex-wrap: wrap
     &__buy
+      display: flex
+      justify-content: center
       margin-bottom: 20px
       flex-basis: 60%
     &__read
+      display: flex
+      justify-content: center
       flex-basis: 60%
+  .books
+    &-wrapper
+      justify-content: space-evenly
+  .recommended
+    &__button
+      width: 358px
+  .card-4
+    display: none
+  .card-5
+    display: none
+  .card-6
+    display: none
 
 @media ( max-width: 992px )
   .main
@@ -28,7 +44,6 @@
     &__read
       flex-basis: 100%
       margin-bottom: 20px
-
 @media ( max-width:768px )
   .header
     &--mobile
@@ -82,6 +97,73 @@
         background-color: #3A4C66
         border-radius: 1px
         padding-bottom: 2px
+  .books
+    &-wrapper
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+  .recommended
+    padding-right: 0
+    &__title
+      text-align: center
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 72px
+    &__button
+      margin-bottom: 55px
+      width: 280px
+      min-height: 48px
+    &__link
+      font-size: 16px
+      line-height: 20px
+      text-transform: none
+  .card-1
+    display: block
+    width: 280px
+    height: 312px
+    padding: 0
+  .card
+    margin-bottom: 24px
+    &__info
+      text-align: center
+
+    &__title
+      font-weight: 500
+      font-size: 20px
+      line-height: 24px
+      margin: 0 0 12px 0
+    &__description
+      font-size: 14px
+      line-height: 20px
+      margin: 0 0 16px 0
+    &__price
+      font-size: 16px
+      line-height: 20px
+      margin: 0 10px 20px 0px
+    &__image
+      max-width: 95px
+      min-width: 95px
+      height: 137px
+      margin-left: 92px
+      margin-top: -24px
+      margin-bottom: 19px
+    &__buttons
+
+    &__buy
+      font-size: 16px
+      line-height: 22px
+      margin-left: 65px
+      padding: 7px 26px
+    &__like-1
+      margin: 0 0 0 20px
+      margin-right: 62px
+  .card-2
+    display: none
+  .card-3
+    display: none
+  .best
+    &__title
+      text-align: center
   .modal
     &__dialog
       top: 30%
@@ -101,6 +183,7 @@
   .container
     max-width: 89%
   .main
+    margin-bottom: 57px
     &__title
       font-weight: bold
       font-size: 32px
@@ -130,6 +213,37 @@
       font-size: 16px
       padding: 6px 27px
       margin-bottom: 35px
+  .best
+    min-width: 290px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 37px
+    &__cards
+      padding-top: 26px
+      padding-left: 15px
+    &__link
+      padding-top: 19px
+      padding-bottom: 23px
+    &-card
+      &--mb
+        margin-bottom: 40px
+      &__image
+        min-width: 96px
+        max-width: 96px
+        height: 142px
+        margin-right: 15px
+      &__title
+        font-family: 'Roboto Condensed', sans-serif
+        font-size: 16px
+        line-height: 24px
+        max-width: 112px
+        margin: 4px 0 12px 0
+      &__price
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 21px
+
   .modal
     &__dialog
       top: 30%

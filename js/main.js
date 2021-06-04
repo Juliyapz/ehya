@@ -47,4 +47,35 @@ $(document).ready(function () {
       modalOverlay.removeClass('modal__overlay--visible');
     }
   });
+
+  var like = $(".card__like-1");
+  like.on("click", function () {
+    $(".card__like-1").toggleClass("card__like-1--red-1");
+  });
+
+  var like = $(".card__like-2");
+  like.on("click", function () {
+    $(".card__like-2").toggleClass("card__like-2--red-2");
+  });
+
+  var like = $(".card__like-3");
+  like.on("click", function () {
+    $(".card__like-3").toggleClass("card__like-3--red-3");
+  });
+
+  var like = $(".card__like-4");
+  like.on("click", function () {
+    $(".card__like-4").toggleClass("card__like-4--red-4");
+  });
+
+  var like = $(".card__like-5");
+  like.on("click", function () {
+    $(".card__like-5").toggleClass("card__like-5--red-5");
+  });
+
+  var like = $(".card__like-6");
+  like.on("click", function () {
+    $(".card__like-6").toggleClass("card__like-6--red-6");
+  });
+
 });
