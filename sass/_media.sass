@@ -18,13 +18,11 @@
       justify-content: space-evenly
   .recommended
     &__button
-      width: 358px
-  .card-4
-    display: none
-  .card-5
-    display: none
-  .card-6
-    display: none
+      width: 100%
+  .card
+    width: 340px
+    &__info
+      margin-left: -11px
 
 @media ( max-width: 992px )
   .main
@@ -44,6 +42,28 @@
     &__read
       flex-basis: 100%
       margin-bottom: 20px
+  .card-4
+    display: none
+  .card-5
+    display: none
+  .card-6
+    display: none
+  .category
+    &-card
+      &__title
+        font-family: 'Roboto Condensed', sans-serif
+        font-weight: bold
+        font-size: 16px
+        line-height: 20px
+        text-align: center
+      &__description
+        font-size: 12px
+        line-height: 20px
+        text-align: center
+  .unreleased
+    &-button
+      &-prev
+        right: 15%
 @media ( max-width:768px )
   .header
     &--mobile
@@ -164,6 +184,7 @@
   .best
     &__title
       text-align: center
+
   .modal
     &__dialog
       top: 30%
@@ -243,7 +264,67 @@
         font-size: 20px
         line-height: 24px
         margin-bottom: 21px
+  .books
+    padding-bottom: 54px
+  .category
+    margin-bottom: 136px
+    &__line
+      margin-bottom: 55px
+    &__slider
+      &--mb
+        margin-bottom: 10px
+      &--add
+        display: block
 
+    &-card
+      min-width: 140px
+      min-height: 182px
+      &__img
+        width: 36px
+        height: 36px
+        margin-top: 20px
+      &__title
+        max-width: 112px
+        margin-top: 16px
+        margin-bottom: 10px
+        &--mb
+          margin-bottom: 30px
+      &__description
+        max-width: 99px
+        margin-bottom: 20px
+    &-button
+      &--next
+        top: 108%
+        right: 50%
+        transform: translateX(50%)
+        width: 48px
+        height: 48px
+  .next-icon
+    fill: #183B56
+    width: 13px
+    height: 16px
+  .unreleased
+    padding-top: 47px
+    padding-bottom: 138px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      margin-bottom: 42px
+    &-button
+      &-next
+        width: 48px
+        height: 48px
+        top: 111%
+        right: 30%
+      &-prev
+        width: 48px
+        height: 48px
+        top: 111%
+        right: 53%
+  .un-card
+    margin-left: 50%
+    transform: translateX(-50%)
   .modal
     &__dialog
       top: 30%

@@ -78,4 +78,61 @@ $(document).ready(function () {
     $(".card__like-6").toggleClass("card__like-6--red-6");
   });
 
+
+  //Слайдер категории
+  const swiper = new Swiper('.category__slider', {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 28,
+    breakpoints: {
+      992: {
+        spaceBetween: 28,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 5,
+      },
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 5,
+      }
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.category-button--next',
+    },
+  });
+
+  //Слайдер неизданное
+  const swiper2 = new Swiper('.unreleased__slider', {
+    slidesPerView: 5,
+    spaceBetween: 25,
+    breakpoints: {
+      1200: {
+        slidesPerView: 5,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      320: {
+        slidesPerView: 1,
+      }
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.unreleased-button-next',
+      prevEl: '.unreleased-button-prev',
+    },
+
+
+  });
+
+
 });
+

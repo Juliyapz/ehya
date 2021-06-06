@@ -1,0 +1,54 @@
+.container
+  position: relative
+.category
+  margin-bottom: 100px
+
+  &__line
+    background-color: #ECEEF2
+    width: 100%
+    height: 1px
+    margin-bottom: 60px
+  &__slider
+    margin: 0
+    &--add
+      display: none
+  &-card
+    border: 1px solid #ECEEF2
+    border-radius: 8px
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 264px
+    &__img
+      margin-top: 40px
+    &__title
+      font-family: 'Roboto', sans-serif
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      margin-top: 40px
+      margin-bottom: 12px
+    &__description
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 30px
+  &-button
+    &--next
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 56px
+      height: 56px
+      background-color: #fff
+      border-radius: 50%
+      box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+      position: absolute
+      top: 50.99%
+      right: -2.6%
+      z-index: 99
+      cursor: pointer
+.next-icon
+  fill: #183B56
+  width: 14px
+  height: 18px

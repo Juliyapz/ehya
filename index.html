@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -263,6 +264,147 @@
   </section>
   <!-- /.books -->
 
+  <section class="category">
+    <div class="container">
+      <div class="category__line"></div>
+      <!-- Slider main container -->
+      <div class="swiper-container category__slider category__slider--mb">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+
+          <div class="swiper-slide category-card  category-card--mr">
+            <img src="img/category-1.png" alt="" class="category-card__img">
+            <h2 class="category-card__title">Бизнес & Финансы</h2>
+            <span class="category-card__description">Книги про мир бизнеса</span>
+          </div>
+
+          <div class="swiper-slide category-card category-card--mr">
+            <img src="img/category-2.png" alt="" class="category-card__img">
+            <h2 class="category-card__title category-card__title--mb">Самомотиватия</h2>
+            <span class="category-card__description">Книги о мотивации</span>
+          </div>
+
+          <div class="swiper-slide category-card category-card--mr">
+            <img src="img/category-3.png" alt="" class="category-card__img">
+            <h2 class="category-card__title">Романы Теленовеллы</h2>
+            <span class="category-card__description">Книги с крутыми историями</span>
+          </div>
+
+          <div class="swiper-slide category-card">
+            <img src="img/category-4.png" alt="" class="category-card__img">
+            <h2 class="category-card__title">Навыки будущего</h2>
+            <span class="category-card__description">Книги для самоподготовки</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider main container -->
+      <div class="swiper-container category__slider category__slider--add">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+
+          <div class="swiper-slide category-card  category-card--mr">
+            <img src="img/category-3.png" alt="" class="category-card__img">
+            <h2 class="category-card__title">Романы Теленовеллы</h2>
+            <span class="category-card__description">Книги с крутыми историями</span>
+          </div>
+
+          <div class="swiper-slide category-card category-card--mr">
+            <img src="img/category-4.png" alt="" class="category-card__img">
+            <h2 class="category-card__title">Навыки будущего</h2>
+            <span class="category-card__description">Книги для самоподготовки</span>
+
+          </div>
+
+          <div class="swiper-slide category-card category-card--mr">
+            <img src="img/category-1.png" alt="" class="category-card__img">
+            <h2 class="category-card__title">Бизнес & Финансы</h2>
+            <span class="category-card__description">Книги про мир бизнеса</span>
+          </div>
+
+          <div class="swiper-slide category-card">
+            <img src="img/category-2.png" alt="" class="category-card__img">
+            <h2 class="category-card__title category-card__title--mb">Самомотиватия</h2>
+            <span class="category-card__description">Книги о мотивации</span>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- If we need navigation buttons -->
+      <div class="category-button--next">
+        <svg class="next-icon">
+          <use xlink:href="img/sprite.svg#category-next"></use>
+        </svg>
+      </div>
+    </div>
+    <!-- /.container -->
+
+
+  </section>
+  <!-- /.category -->
+
+  <section class="unreleased">
+    <div class="container">
+      <h2 class="unreleased__title">Неизданные книги</h2>
+
+
+      <div class="swiper-container unreleased__slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide unreleased__card">
+            <div class="un-card">
+              <img src="img/unreleased-1.png" alt="Обложка книги" class="unreleased__img">
+            </div>
+          </div>
+          <div class="swiper-slide unreleased__card">
+            <div class="un-card">
+              <img src="img/unreleased-2.png" alt="Обложка книги" class="unreleased__img">
+            </div>
+          </div>
+          <div class="swiper-slide unreleased__card">
+            <div class="un-card">
+              <img src="img/unreleased-3.png" alt="Обложка книги" class="unreleased__img">
+            </div>
+          </div>
+          <div class="swiper-slide unreleased__card">
+            <div class="un-card">
+              <img src="img/unreleased-4.png" alt="Обложка книги" class="unreleased__img">
+            </div>
+          </div>
+          <div class="swiper-slide unreleased__card">
+            <div class="un-card">
+              <img src="img/unreleased-5.png" alt="Обложка книги" class="unreleased__img">
+            </div>
+          </div>
+          <div class="swiper-slide unreleased__card">
+            <div class="un-card">
+              <img src="img/unreleased-1.png" alt="Обложка книги" class="unreleased__img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+
+      <svg class="unreleased-button-prev">
+        <use xlink:href="img/sprite.svg#unreleased-prev"></use>
+      </svg>
+
+
+      <svg class="unreleased-button-next">
+        <use xlink:href="img/sprite.svg#unreleased-next"></use>
+      </svg>
+
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.unreleased -->
+
   <div class="modal">
     <div class="modal__overlay"></div>
     <div class="modal__dialog">
@@ -280,6 +422,7 @@
   </div>
   <!-- /.modal -->
 
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
