@@ -35,6 +35,20 @@
   .partners
     &__icon
       width: 16%
+  .blog
+    &-wrapper
+      flex-direction: column
+      align-items: center
+    &__articles
+      flex-direction: column
+    &__link
+      order: 1
+    &-card
+      margin-bottom: 30px
+  .article
+    &__text
+      margin-bottom: 30px
+
 @media (max-width:1172px)
   .card-4
     display: none
@@ -234,6 +248,20 @@
       width: 32%
       &--mb-1
         margin-bottom: 65px
+  .blog
+    &__articles
+      align-items: center
+    &-card
+      &__text
+        font-size: 14px
+        line-height: 20px
+  .article
+    margin-right: 0
+    &__image
+      width: 90%
+      height: auto
+    &__text
+      padding-right: 0
   .modal
     &__dialog
       top: 30%
@@ -450,6 +478,48 @@
         margin-bottom: 15px
     &__list
       margin-bottom: 0
+  .blog
+    padding-top: 57px
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 48px
+    &__link
+      font-size: 14px
+      padding: 9px 47px
+    &-card
+      &:not(:last-child)
+        margin-bottom: 31px
+      &__image
+        max-width: 90px
+        min-width: 90px
+        height: 90px
+        margin-left: 3px
+        margin-right: 20px
+      &__date
+        font-size: 10px
+        line-height: 10px
+        margin-bottom: 11px
+      &__text
+        margin-bottom: 3px
+      &__link
+        font-size: 10px
+        line-height: 20px
+  .article
+    &__image
+      width: 280px
+      height: 120px
+      margin-bottom: 20px
+      margin-left: 3px
+    &__title
+      font-size: 16px
+      line-height: 20px
+      margin-bottom: 10px
+      margin-left: 3px
+    &__text
+      font-size: 12px
+      line-height: 24px
+      margin-left: 3px
   .modal
     &__dialog
       top: 30%
