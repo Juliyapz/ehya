@@ -117,8 +117,8 @@ $(document).ready(function () {
     },
     // Navigation arrows
     navigation: {
-      nextEl: '.category-button--next',
-      prevEl: '.category-button--prev',
+      nextEl: '.category-button-next',
+      prevEl: '.category-button-prev',
       disabledClass: 'category-button--disabled',
     },
   });

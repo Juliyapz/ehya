@@ -32,7 +32,9 @@
     &-list
       &__card
         max-width: 30%
-
+  .partners
+    &__icon
+      width: 16%
 @media (max-width:1172px)
   .card-4
     display: none
@@ -82,6 +84,8 @@
       &-prev
         right: 15%
   .story
+    &-wrapper
+      padding: 76px 0 150px 0
     &__info
       flex-direction: column
       align-items: center
@@ -219,10 +223,17 @@
       text-align: center
   .story
     &-wrapper
-      padding: 76px 0 100px 0
+      padding: 76px 0 155px 0
     &__video
       height: 250px
-
+  .partners
+    &__list
+      &--hidden
+        display: none
+    &__icon
+      width: 32%
+      &--mb-1
+        margin-bottom: 65px
   .modal
     &__dialog
       top: 30%
@@ -331,13 +342,13 @@
         max-width: 99px
         margin-bottom: 20px
     &-button
-      &--next
+      &-next
         top: 108%
         right: 40%
         transform: translateX(50%)
         width: 48px
         height: 48px
-      &--prev
+      &-prev
         top: 108%
         left: 40%
         transform: translateX(-50%)
@@ -378,7 +389,7 @@
       max-width: 94%
   .story
     &-wrapper
-      padding: 16px 0 100px 0
+      padding: 16px 0 72px 0
     &__title
       font-size: 28px
       line-height: 36px
@@ -423,6 +434,22 @@
         width: 10px
         height: 14px
         margin-top: 16px
+  .partners
+    padding-top: 36px
+    padding-bottom: 39px
+    &__title
+      line-height: 30px
+      letter-spacing: 0.2px
+      margin-bottom: 28px
+    &__icon
+      width: 57%
+      margin-bottom: 15px
+      &--ml
+        margin-left: -16%
+      &--mb-1
+        margin-bottom: 15px
+    &__list
+      margin-bottom: 0
   .modal
     &__dialog
       top: 30%
