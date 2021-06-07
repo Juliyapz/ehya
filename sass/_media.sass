@@ -23,6 +23,15 @@
     width: 340px
     &__info
       margin-left: -11px
+  .story
+    &__title
+      min-width: 385px
+    &__description
+      margin-right: 0
+  .video
+    &-list
+      &__card
+        max-width: 30%
 
 @media ( max-width: 992px )
   .main
@@ -64,6 +73,22 @@
     &-button
       &-prev
         right: 15%
+  .story
+    &__info
+      flex-direction: column
+      align-items: center
+      text-align: center
+    &__title
+      margin-bottom: 24px
+    &__description
+      margin-top: 0
+  .video
+    &-list
+      &__card
+        min-width: 47%
+
+        &--hidden
+          display: none
 @media ( max-width:768px )
   .header
     &--mobile
@@ -172,7 +197,7 @@
     &__buy
       font-size: 16px
       line-height: 22px
-      margin-left: 65px
+      margin-left: 75px
       padding: 7px 26px
     &__like-1
       margin: 0 0 0 20px
@@ -184,6 +209,11 @@
   .best
     &__title
       text-align: center
+  .story
+    &-wrapper
+      padding: 76px 0 100px 0
+    &__video
+      height: 250px
 
   .modal
     &__dialog
@@ -325,6 +355,56 @@
   .un-card
     margin-left: 50%
     transform: translateX(-50%)
+  .container
+    &--story
+      max-width: 94%
+  .story
+    &-wrapper
+      padding: 16px 0 100px 0
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 25px
+      min-width: 100%
+    &__description
+      max-width: 266px
+      font-size: 18px
+      line-height: 25px
+      margin-bottom: 34px
+    &__video
+      height: 210px
+      margin-bottom: 20px
+  .video
+    &__play
+      width: 56px
+      height: 56px
+      &-icon
+        width: 17px
+        height: 22px
+    &-list
+      &__image
+        height: 138px
+      &__play
+        &-icon
+          width: 21px
+          height: 27px
+      &__tit
+        flex-direction: column
+        align-items: center
+        margin-top: 16px
+      &__title
+        font-size: 16px
+        line-height: 20px
+        text-align: center
+        margin-bottom: 6px
+      &__description
+        text-align: center
+        font-size: 12px
+        line-height: 20px
+      &__icon
+        width: 10px
+        height: 14px
+        margin-top: 16px
   .modal
     &__dialog
       top: 30%
