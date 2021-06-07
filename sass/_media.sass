@@ -20,7 +20,7 @@
     &__button
       width: 100%
   .card
-    width: 340px
+    width: 49%
     &__info
       margin-left: -11px
   .story
@@ -32,6 +32,18 @@
     &-list
       &__card
         max-width: 30%
+
+@media (max-width:1172px)
+  .card-4
+    display: none
+  .card-5
+    display: none
+  .card-6
+    display: none
+  .card
+    width: 70%
+    padding: 11px 11px 11px 11px
+    justify-content: flex-start
 
 @media ( max-width: 992px )
   .main
@@ -51,12 +63,6 @@
     &__read
       flex-basis: 100%
       margin-bottom: 20px
-  .card-4
-    display: none
-  .card-5
-    display: none
-  .card-6
-    display: none
   .category
     &-card
       &__title
@@ -69,6 +75,8 @@
         font-size: 12px
         line-height: 20px
         text-align: center
+  .card
+    width: 340px
   .unreleased
     &-button
       &-prev
@@ -297,7 +305,7 @@
   .books
     padding-bottom: 54px
   .category
-    margin-bottom: 136px
+    margin-bottom: 141px
     &__line
       margin-bottom: 55px
     &__slider
@@ -325,11 +333,21 @@
     &-button
       &--next
         top: 108%
-        right: 50%
+        right: 40%
         transform: translateX(50%)
         width: 48px
         height: 48px
+      &--prev
+        top: 108%
+        left: 40%
+        transform: translateX(-50%)
+        width: 48px
+        height: 48px
   .next-icon
+    fill: #183B56
+    width: 13px
+    height: 16px
+  .prev-icon
     fill: #183B56
     width: 13px
     height: 16px

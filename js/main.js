@@ -81,27 +81,49 @@ $(document).ready(function () {
 
   //Слайдер категории
   const swiper = new Swiper('.category__slider', {
-    loop: true,
     slidesPerView: 4,
     spaceBetween: 28,
     breakpoints: {
-      992: {
+      1440: {
+        slidesPerView: 4,
         spaceBetween: 28,
+        slidesPerColumn: 1,
+        slidesPerColumnFill: 'column',
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 28,
+        slidesPerColumn: 1,
+        slidesPerColumnFill: 'column',
       },
       768: {
-        slidesPerView: 4,
-        spaceBetween: 5,
+        slidesPerView: 3,
+        spaceBetween: 15,
+        slidesPerColumn: 1,
+        slidesPerColumnFill: 'column',
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+        slidesPerColumn: 1,
+        slidesPerColumnFill: 'column',
       },
       320: {
         slidesPerView: 2,
         spaceBetween: 5,
+        slidesPerColumn: 2,
+        slidesPerColumnFill: 'row',
       }
     },
     // Navigation arrows
     navigation: {
       nextEl: '.category-button--next',
+      prevEl: '.category-button--prev',
+      disabledClass: 'category-button--disabled',
     },
   });
+
+
 
   //Слайдер неизданное
   const swiper2 = new Swiper('.unreleased__slider', {
