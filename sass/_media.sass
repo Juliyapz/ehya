@@ -48,6 +48,17 @@
   .article
     &__text
       margin-bottom: 30px
+  .subscribe
+    &__title
+      margin-right: 11%
+      flex-wrap: wrap
+  .footer
+    &-wrapper
+      justify-content: space-between
+    &__info
+      margin-right: 0
+    &__ul
+      margin-right: 0
 
 @media (max-width:1172px)
   .card-4
@@ -112,9 +123,31 @@
     &-list
       &__card
         min-width: 47%
-
         &--hidden
           display: none
+  .blog
+    padding-bottom: 0
+  .subscribe
+    &-wrapper
+      flex-direction: column
+    &__form
+      max-width: 449px
+  .footer
+    &-wrapper
+      flex-wrap: wrap
+    &__info
+      order: 1
+      flex-basis: 100%
+      text-align: center
+      align-self: center
+    &__description
+      max-width: none
+    &__ul
+      margin-bottom: 50px
+      margin-right: 3px
+    &__bottom
+      display: none
+
 @media ( max-width:768px )
   .header
     &--mobile
@@ -277,7 +310,6 @@
         margin-right: 8px
     &-left
       top: 57px
-
   .container
     max-width: 89%
   .main
@@ -352,7 +384,6 @@
         margin-bottom: 10px
       &--add
         display: block
-
     &-card
       min-width: 140px
       min-height: 182px
@@ -480,6 +511,7 @@
       margin-bottom: 0
   .blog
     padding-top: 57px
+    padding-bottom: 0
     &__title
       font-size: 28px
       line-height: 36px
@@ -520,6 +552,61 @@
       font-size: 12px
       line-height: 24px
       margin-left: 3px
+  .subscribe
+    background-image: url('../img/subscript-bg.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    &-wrapper
+      background-image: none
+      padding: 27px 63px 28px 6px
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__form
+      margin-top: 32px
+      max-width: 272px
+      min-width: 272px
+      min-height: 112px
+    &__icon
+      top: 20px
+    &__input
+      width: 230px
+      height: 45px
+    &__button
+      top: 58px
+      right: 11px
+      padding: 9px 28px
+      height: 42px
+      width: 250px
+  .footer
+    padding-top: 49px
+    &-wrapper
+      justify-content: start
+      margin-bottom: 0
+    &__title
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 18px
+    &__list
+      &--mar
+        margin-left: 6px
+        margin-right: 42px
+      &--mar-2
+        margin-left: 6px
+        margin-right: 54px
+    &__ul
+      margin-bottom: 40px
+    &__item
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 15px
+    &__logo
+      margin-top: 7px
+      margin-bottom: 10px
+    &__description
+      margin-left: -8px
+      margin-bottom: 14px
   .modal
     &__dialog
       top: 30%

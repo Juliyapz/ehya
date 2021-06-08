@@ -578,13 +578,165 @@
   </section>
   <!-- /.blog -->
 
+  <section class="subscribe">
+    <div class="container">
+      <div class="subscribe-wrapper">
+        <h2 class="subscribe__title">Будь первым, кто узнает о&nbsp;наших акциях</h2>
+        <form action="send.php" method="POST" onsubmit="send(event, 'send.php')" class="subscribe__form">
+          <svg class="subscribe__icon">
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+          <input type="email" name="email" class="subscribe__input" placeholder="Ваш Emaill" required>
+          <button class="subscribe__button">Регистрация</button>
+        </form>
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.subscript -->
+
+  <section class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer__info">
+          <a href="#"><img src="img/logo.png" alt="" class="footer__logo"></a>
+          <span class="footer__description">Создайте современный и креативный&nbsp;веб-сайт с crealand</span>
+          <div class="footer__icons">
+            <a href="#" class="footer__social-link">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#google"></use>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link">
+              <svg class="footer__icon  footer__icon--mr">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#inst"></use>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link">
+              <svg class="footer__icon">
+                <use xlink:href="img/sprite.svg#in"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__list footer__list--mar">
+          <h3 class="footer__title ">Продукт</h3>
+          <ul class="footer__ul">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Лэндинг
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Функции
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Документация
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Скидки
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Расценки</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.footer-list -->
+
+        <div class="footer__list">
+          <h3 class="footer__title">Сервисы</h3>
+          <ul class="footer__ul">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Документация
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Дизайн
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Темы
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Илюстрации
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">UI Kit</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.footer-list -->
+
+        <div class="footer__list footer__list--mar-2">
+          <h3 class="footer__title ">Компания</h3>
+          <ul class="footer__ul footer__ul--mr">
+            <li class="footer__item">
+              <a href="#" class="footer__link">О нас
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Условия
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Privacy Policy
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Careers
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.footer-list -->
+
+        <div class="footer__list">
+          <h3 class="footer__title">Еще..</h3>
+          <ul class="footer__ul">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Документация
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Лицензия
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Изменения
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.footer-list -->
+      </div>
+      <!-- /.footer-wrapper -->
+      <div class="footer__bottom">
+        <img src="img/footer-heart.png" alt="" class="footer__heart">
+        <span class="footer__copy">Copyright © 2019. Crafted with love.</span>
+      </div>
+      <!-- /.footer__bottom -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.footer -->
+
   <div class="modal">
     <div class="modal__overlay"></div>
     <div class="modal__dialog">
       <svg class="modal__close">
         <use xlink:href="img/sprite.svg#close"></use>
       </svg>
-      <form action="send.php" method="POST" class="modal__form">
+      <form action="send.php" method="POST" onsubmit="send(event, 'send.php')" class="modal__form">
         <input type="text" class="modal__input" placeholder="Ваше имя*" name="name" required minlength="2">
         <input type="tel" class="modal__input phone" placeholder="Телефон*" name="phone" required minlength="17">
         <input type="email" class="modal__input" placeholder="Email*" name="email" required>
