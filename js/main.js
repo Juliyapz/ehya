@@ -28,6 +28,25 @@ $(document).ready(function () {
   }
 
   $('.phone').mask('+7(000) 000-00-00');
+  $(".form-1").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Введите имя",
+          minlength: "Введите не менее 2х символов"
+        },
+        phone: {
+          required: "Введите номер телефона",
+          minlength: "Введите номер полностью"
+        },
+        email: {
+          required: "Введите ваш Е-mail",
+          email: "Введите корректный Е-mail"
+        },
+      },
+    });
+  });
 
   $(document).keyup(function (e) {
     if (e.keyCode == 27) {
@@ -151,37 +170,25 @@ $(document).ready(function () {
       nextEl: '.unreleased-button-next',
       prevEl: '.unreleased-button-prev',
     },
-
-
   });
+
+  //Якорные ссылки
+  $("#nav").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
+
+  $("#but").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1000);
+  });
+
+
 
 
 });
 
-//Отправка письма
-function send(event, php) {
-  console.log("Отправка запроса");
-  event.preventDefault ? event.preventDefault() : event.returnValue = false;
-  var req = new XMLHttpRequest();
-  req.open('POST', php, true);
-  req.onload = function () {
-    if (req.status >= 200 && req.status < 400) {
-      json = JSON.parse(this.response); // Ебанный internet explorer 11
-      console.log(json);
-
-      // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
-      if (json.result == "success") {
-        // Если сообщение отправлено
-        alert("Сообщение отправлено");
-      } else {
-        // Если произошла ошибка
-        alert("Ошибка. Сообщение не отправлено");
-      }
-      // Если не удалось связаться с php файлом
-    } else { alert("Ошибка сервера. Номер: " + req.status); }
-  };
-
-  // Если не удалось отправить запрос. Стоит блок на хостинге
-  req.onerror = function () { alert("Ошибка отправки запроса"); };
-  req.send(new FormData(event.target));
-}

@@ -19,7 +19,7 @@
 
 <body>
 
-  <header class="header header--mobile">
+  <header class="header header--mobile" id="header">
     <div class="container">
       <div class="header-wrapper">
         <a href="#">
@@ -27,7 +27,7 @@
         </a>
         <div class="header-left">
           <nav class="nav">
-            <ul class="nav__list">
+            <ul class="nav__list" id="nav">
               <li class="nav__item"><a href="#books" class="nav__link">Рекомендации</a></li>
               <li class="nav__item"><a href="#books" class="nav__link">Книги</a></li>
               <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
@@ -594,7 +594,7 @@
     <div class="container">
       <div class="subscribe-wrapper">
         <h2 class="subscribe__title">Будь первым, кто узнает о&nbsp;наших акциях</h2>
-        <form action="send.php" method="POST" onsubmit="send(event, 'send.php')" class="subscribe__form">
+        <form action="send.php" method="POST" class="subscribe__form form">
           <svg class="subscribe__icon">
             <use xlink:href="img/sprite.svg#mail"></use>
           </svg>
@@ -748,7 +748,7 @@
       <svg class="modal__close">
         <use xlink:href="img/sprite.svg#close"></use>
       </svg>
-      <form action="send.php" method="POST" onsubmit="send(event, 'send.php')" class="modal__form">
+      <form action="send.php" method="POST" class="modal__form form-1">
         <input type="text" class="modal__input" placeholder="Ваше имя*" name="name" required minlength="2">
         <input type="tel" class="modal__input phone" placeholder="Телефон*" name="phone" required minlength="17">
         <input type="email" class="modal__input" placeholder="Email*" name="email" required>
@@ -759,10 +759,18 @@
   </div>
   <!-- /.modal -->
 
+  <div id="but" class="button-top">
+    <a href="#header">
+      <svg class="icon-top">
+        <use xlink:href="img/sprite.svg#button-top3"></use>
+      </svg>
+    </a>
+  </div>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
